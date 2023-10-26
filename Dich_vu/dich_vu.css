@@ -1,0 +1,557 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    width: 100%;
+    margin: 0 auto;
+    font-weight: normal;
+    color: #000000;
+}
+a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #005a96;
+}
+header {
+    width: 100%;
+    position: relative;
+    position: sticky;
+    top: 0;
+}
+header .header-top{
+    display: flex;
+    flex-wrap: wrap;
+    padding:10px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #e6e6e6;
+    z-index: 10;
+}
+ul{
+    list-style: none;
+}
+.sub-menu a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+.service, .tour {
+    font-weight: bold;
+    font-size: 20px;
+    color: #005a96;
+    cursor: pointer;
+}
+header .header-between_2 {
+    position: relative;
+    left: 42%;
+    z-index: 1;
+}
+header .header-between_2 ul {
+    position: absolute;
+    float: left;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #e6e6e6;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: #CCCCCC;
+}
+header .header-between_2 ul li {
+    padding-bottom: 5px;
+}
+header .header-between_2 ul li:hover {
+    background-color: #AAAAAA;
+}
+header .header-top .logo{
+    flex:1;
+}
+header .header-top .menu{
+    flex: 4;
+}
+header .header-top .other{
+    flex: 1;
+}
+header .menu .sub-menu{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    margin-bottom: 2rem;
+}
+header .menu .sub-menu li{
+    padding-left:  40px;
+}
+header .tours{
+    margin-top: 1px;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-top:  0.1px solid black;
+    border-bottom:  0.1px solid black;
+    display: flex;
+}
+header .tours .coutry{
+    flex:1;
+}
+header .tours .area{
+    flex: 4;
+}
+header .tours .coutry{
+    padding-top: 7rem;
+    padding-left: 2rem;
+}
+header .tours .coutry h3{
+    padding-top:1rem;
+}
+header .tours .coutry .in-coutry{
+    color: red;
+}
+header .tours .area .vietnam{
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+header .tours .area .vietnam div{
+    margin-right: 4rem;
+}
+header .tours .area .vietnam div li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+header .tours .area .vietnam div li a{
+    font-size: 16px;
+    color: #2d4271;
+}
+header .header-between, header .header-between_2{
+    display: none !important;
+    position: absolute;
+    width: 100%;
+}
+header .header-between.active, header .header-between_2.active{
+    display: block !important;
+    z-index: 1;
+    opacity: 1;
+}
+main {
+    overflow: auto;
+}
+div.leftnav {
+    float: left;
+    margin: 40px 0;
+    padding: 0 15px;
+}
+.contentnav {
+    width: 100%;
+    margin-bottom: 20px;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #e6e6e6;
+    padding: 15px;
+}
+.contentnav h4 {
+    background: #005a96 none repeat scroll 0 0;
+    padding: 20px 15px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 16px;
+}
+.contentnav ul {
+    background-color: #CCCCCC;
+    list-style: none;
+}
+.contentnav ul li a {
+    text-decoration: none;
+    margin-left: 10px;
+    color: #005a96;
+}
+.contentnav ul li {
+    padding: 10px 15px;
+}
+.contentnav ul li:hover {
+    background-color: #AAAAAA;
+}
+h4 .fa {
+    display: inline-block;
+    font-size: inherit;
+    margin-right: 10px;
+    color: #F2676B;
+}
+.contentnav p {
+    font-weight: bold;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+.contentnav h4 + p {
+    margin: 15px 3px 15px 3px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: normal;
+}
+.contentnav p a:hover {
+    color: #3333FF;
+    text-decoration: underline;
+}
+.imgmain {
+    float: left;
+    margin: 40px 0;
+    padding: 0 15px;
+}
+.contentmain {
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #e6e6e6;
+    padding: 0 15px;
+}
+.imgmain .content1, .imgmain .content2 {
+    font-weight: bold;
+    letter-spacing: normal;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: #0399d2;
+    margin-top: 35px;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.imgmain .content1 {
+    text-align: left;
+}
+.imgmain p {
+    text-align: center;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+.imgmain p span {
+    font-weight: bold;
+}
+.img2 {
+    width: 100%;
+}
+.img2 img {
+    width: 100%;
+    border: 0;
+}
+.imgmain .content3 {
+    position: relative;
+    color: #005a96;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.imgmain .content3::after {
+    content: "";
+    position: absolute;
+    background: #005a96;
+    height: 3px;
+    width: 30%;
+    right: 0%;
+    top: 50%;
+    float: right;
+}
+.imgmain .content3::before {
+    content: "";
+    position: absolute;
+    background: #005a96;
+    height: 3px;
+    width: 30%;
+    left: 0%;
+    top: 50%;
+    float: left;
+}
+.content3 + ul {
+    padding-left: 40px;
+    margin-bottom: 10px;
+    list-style-type: circle;
+}
+.content3 + ul li {
+    padding-bottom: 10px;
+    margin: 10px 0;
+    border-bottom: 0.5px solid #ddd;
+}
+.content3 + ul li a {
+    color: #337AB7;
+    text-decoration: none;
+}
+.content3 + ul li a:hover {
+    text-decoration: underline;
+}
+.owl-carousel {
+    display: none;
+    width: 100%;
+    position: relative;
+}
+.item {
+    position: relative;
+    float: left;
+    text-align: center;
+    background-color: #f0f0f0;
+    width: 250px;
+    height: 80px;
+    margin-left: 70px;
+}
+.large-6 .owl-carousel .item img {
+    border: 0;
+    height: 40%;
+    width: auto;
+    margin: 20px 60px;
+}
+footer {
+    clear: both;
+}
+.topfooter {
+    padding: 15px 0px;
+    background: #fbaf17;
+    color: #fff;
+    overflow: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+form {
+    padding: 0 15px;
+}
+label {
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 0;
+}
+input {
+    height: 40px;
+    padding: 6PX 12px;
+    border-radius: 0.5px solid #ffffff;
+}
+button {
+    height: 40px;
+    border: none;
+    background: #005a96;
+    color: #fff;
+    font-weight: bold;
+    padding: 1px 6px;
+    cursor: pointer;
+}
+figure {
+    padding: 10px;
+}
+figure a {
+    text-decoration: none;
+    padding-left: 10px;
+}
+.bottomfooter {
+    background-color: #f9f9f9;
+}
+.bottomfooter .support{
+    margin-left: 7rem;
+    margin-right: 7px;
+    padding-top: 3rem;
+    display: flex;
+}
+.bottomfooter .support .contact{
+    flex:2;
+}
+.bottomfooter .support .app-phone{
+    flex:1;
+}
+.bottomfooter .support .contact{
+    display: flex;
+}
+.bottomfooter .support .contact .one{
+    flex: 1;
+}
+.bottomfooter .support .contact .two{
+    flex: 1;
+}
+.bottomfooter .support .contact .three{
+    flex: 1;
+}
+.bottomfooter .support .contact .conscious{
+    display: flex;
+}
+.bottomfooter .support .contact .conscious ul{
+    flex: 1;
+}
+.bottomfooter .support .contact .conscious li{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+.bottomfooter .support .contact .conscious a{
+    color: #2d4271;
+}
+.bottomfooter .support .contact h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+.bottomfooter .app-phone .app{
+    display: flex;
+    margin-top: 1rem;
+}
+.bottomfooter .app-phone .app div{
+    flex:1;
+}
+.bottomfooter .app-phone .app div img{
+    border-radius: 5px;
+}
+.bottomfooter .app-phone .qr{
+    display: flex;
+    margin-top: 1rem;
+}
+.bottomfooter .app-phone .qr div{
+    flex:1;
+}
+.bottomfooter .support .app-phone h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+.bottomfooter .information{
+    display: flex;
+    margin-left: 7rem;
+    margin-right: 7px;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
+.bottomfooter .information .info{
+    flex:1;
+}
+.bottomfooter .information .email{
+    flex:1;
+}
+.bottomfooter .information .info{
+    display: flex;
+}
+.bottomfooter .information .info .call{
+    flex: 1;
+}
+.bottomfooter .information .info .intro{
+    flex: 1;
+}
+.bottomfooter .information .info .call p{
+    width: 20rem;
+}
+.bottomfooter .information .info h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+.bottomfooter .information .info a{
+    color: #2d4271;
+}
+.bottomfooter .information .info li{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+}
+.bottomfooter .information .info p{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+.bottomfooter .information .info .icon i{
+   font-size: 25px;
+   padding-right: 1rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+.bottomfooter .information .info .hotline{
+    background-color: red;
+    margin-right: 12rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 5px;
+}
+.bottomfooter .information .info .hotline i{
+    margin-left: 2rem;
+}
+.bottomfooter .information .info .hotline h4{
+    font-size: 20px;
+    color:white;
+}
+.bottomfooter .information .email h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+.bottomfooter .information .email .customersemail input{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+.bottomfooter .information .email .customersemail .need{
+    position: relative;
+    border: 1px;
+}
+.bottomfooter .information .email .customersemail i{
+    position: absolute;
+    top:1vh;
+    left:33%;
+}
+.bottomfooter .information .email .confirm{
+    display: flex;
+}
+.bottomfooter .information .email .confirm .confirm-one{
+    padding-right: 5rem;
+}
+.bottomfooter .information .email .confirm .confirm-two div{
+    margin-left: 2rem;
+}
+.last{
+    padding: 1rem;
+}
+.last p{
+    font-size: 12px;
+    padding: 0.25rem;
+    color: #2d4271;
+    padding-left: 2rem;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (max-width: 768px) {
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:65em){
+    .bottomfooter .support{
+        margin-left: 7rem;
+        margin-right: 7px;
+        margin-top: 3rem;
+        padding-top: 3rem;
+        display: block;
+    }
+    .bottomfooter .support .contact{
+        display: block;
+    }
+    .bottomfooter .app-phone .app{
+        display: block;
+        margin-top: 1rem;
+    }
+    .bottomfooter .information{
+        display: block;
+        margin-left: 7rem;
+        margin-right: 7px;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+    }
+}

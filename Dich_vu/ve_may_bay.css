@@ -1,0 +1,55 @@
+label {
+  color: black;
+  font-weight: normal;
+}
+.contact .rows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: center;
+}
+.contact .rows form {
+  flex: 1 1 50rem;
+  padding: 2rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.contact .rows form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.contact .rows form .inputBox input, .contact .rows form textarea, #country {
+  width: 49%;
+  margin: 1rem 0;
+  padding: 1rem;
+  font-size: 13px;
+  color: #333;
+  background: #f7f7f7;
+  text-transform: none;
+}
+#country {
+  width: 45%;
+}
+.material-icons {
+  position: relative;
+  top: 30px;
+}
+.contact .rows form textarea {
+  height: 5rem;
+  resize: none;
+  width: 100%;
+}
+.btn {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #45a049;
+}

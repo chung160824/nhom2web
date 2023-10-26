@@ -1,0 +1,363 @@
+$(document).ready(function(){
+    $('.main__section__clients').owlCarousel({
+        loop: true,
+        margin: 20,
+        dots: true,
+        nav: true,
+        navText: ["<i class='fa-regular fa-angle-left'></i>","<i class='fa-regular fa-angle-right'></i>"],
+        // autoplay: true,
+        // autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            820:{
+                items:2
+            },
+            1300:{
+                items:3
+            }
+        }
+    })
+    $('.main__slide__destination').owlCarousel({
+        loop: true,
+        margin: 20,
+        dots: false,
+        nav: true,
+        center: true,
+        navText: ["<i class='fa-regular fa-angle-left'></i>","<i class='fa-regular fa-angle-right'></i>"],
+        // autoplay: true,
+        // autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            820:{
+                items:1
+            },
+            1300:{
+                items:1.5
+            }
+        }
+    })
+
+    $('.main__guides').owlCarousel({
+        loop: true,
+        margin: 20,
+        dots: false,
+        nav: false,
+        navText: ["<i class='fa-regular fa-angle-left'></i>","<i class='fa-regular fa-angle-right'></i>"],
+        // autoplay: true,
+        // autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            820:{
+                items:2
+            },
+            1300:{
+                items:4
+            }
+        }
+    })
+    $('.main__destinations').owlCarousel({
+        loop: true,
+        margin: 40,
+        dots: false,
+        nav: true,
+        navText: ["<i class='fa-regular fa-angle-left'></i>","<i class='fa-regular fa-angle-right'></i>"],
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:2
+            },
+            820:{
+                items:4
+            },
+            1300:{
+                items:6
+            }
+        }
+    })
+    $('.main__recommended').owlCarousel({
+        loop: true,
+        margin: 0,
+        dots: true,
+        nav: true,
+        navText: ["<i class='fa-regular fa-angle-left'></i>","<i class='fa-regular fa-angle-right'></i>"],
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            820:{
+                items:2
+            },
+            1300:{
+                items:4
+            }
+        }
+    })
+
+    $('.main__story').owlCarousel({
+        loop: true,
+        margin: 0,
+        dots: true,
+        nav: true,
+        navText: ["<i class='fa-regular fa-angle-left'></i>","<i class='fa-regular fa-angle-right'></i>"],
+        // autoplay: true,
+        // autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            820:{
+                items:2
+            },
+            1300:{
+                items:4
+            }
+        }
+    })
+
+    $('.slide__tour__detail').owlCarousel({
+        loop: true,
+        margin: 10,
+        dots: false,
+        nav: true,
+        center: true,
+        navText: ["<i class='fa-regular fa-angle-left'></i>","<i class='fa-regular fa-angle-right'></i>"],
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            820:{
+                items:1
+            },
+            1300:{
+                items:1.5
+            }
+        }
+    })
+
+
+    $('.main__other__options').owlCarousel({
+        loop: true,
+        margin: 20,
+        dots: false,
+        nav: true,
+        navText: ["<i class='fa-regular fa-angle-left'></i>","<i class='fa-regular fa-angle-right'></i>"],
+        autoplay: true,
+        autoplayTimeout: 4000,
+        smartSpeed: 1000,
+        responsive:{
+            0:{
+                items:1
+            },
+            820:{
+                items:2
+            },
+            1300:{
+                items:4
+            }
+        }
+    })
+})
+var video = document.getElementById("myVideo");
+$('.play').click(function () {
+    video.play();
+    $('#myVideo').css("transform","scale(1) translateY(-50%)");
+    $('.video__about').css("opacity","1");
+    $('.video__about').css("visibility","visible");
+})
+$('.close__video__banner').click(function(){
+    $('.video__about').css("opacity","0");
+    $('.video__about').css("visibility","hidden");
+    $('#myVideo').css("transform","scale(0)");
+    video.pause();
+})
+
+
+$(".menu__bar").click(function(){
+    $(".menu__mobile").addClass('active');
+    $(".overlay").show();
+})
+$(".back__menu").click(function(){
+    $(".menu__mobile").toggleClass('active');
+    $(".overlay").hide();
+})
+$(".overlay").click(function(){
+    $(this).hide();
+    $(".menu__mobile").toggleClass('active');
+})
+
+
+$('.sub__menu__mobile .menu__title__mobile').click(function(){
+    $(this).parent('.sub__menu__mobile').toggleClass('show__dropdown');
+    $('.sub__menu__mobile').not($(this).parent('.sub__menu__mobile')).removeClass('show__dropdown');
+    $(this).parent('.sub__menu__mobile').toggleClass('rotate__icons');
+    $('.sub__menu__mobile').not($(this).parent('.sub__menu__mobile')).removeClass('rotate__icons');
+})
+
+$('.main__menu__mobile .sub__menu__mobile').click(function(){
+    $(this).siblings().children('.dropdown__menu__mobile').slideUp(300);
+    $(this).toggleClass('show__dropdown').children('.dropdown__menu__mobile').slideToggle(300);
+})
+
+
+
+
+$(window).scroll(function () {
+    if ($(this).scrollTop() >= 300) {
+        $('.btn-active').addClass('animate');
+    }
+    else {
+        $('.btn-active').removeClass('animate');
+    }
+})
+
+$('.btn-active').click(function () {
+    $('html').animate({
+        scrollTop: 0
+    }, 500);
+})
+
+
+$(function () {
+    $('#check-in').datepicker({ dateFormat: "dd/MM/yy", changeMonth: true, changeYear: true,
+    monthNames: ["01","02","03","04","05","06","07","08","09","10","11","12"],
+    monthNamesShort: ["01","02","03","04","05","06","07","08","09","10","11","12"]}).datepicker('setDate', '+0d');
+    $('#check-out').datepicker({ dateFormat: "dd/MM/yy", changeMonth: true, changeYear: true,
+    monthNames: ["01","02","03","04","05","06","07","08","09","10","11","12"],
+    monthNamesShort: ["01","02","03","04","05","06","07","08","09","10","11","12"]}).datepicker('setDate', '+1d');
+})
+
+/*range price*/
+// var lowerSlider = document.querySelector('#lower');
+// var  upperSlider = document.querySelector('#upper');
+
+// document.querySelector('#two').value=upperSlider.value;
+// document.querySelector('#one').value=lowerSlider.value;
+
+// var  lowerVal = parseInt(lowerSlider.value);
+// var upperVal = parseInt(upperSlider.value);
+
+// upperSlider.oninput = function () {
+//     lowerVal = parseInt(lowerSlider.value);
+//     upperVal = parseInt(upperSlider.value);
+
+//     if (upperVal < lowerVal + 4) {
+//         lowerSlider.value = upperVal - 4;
+//         if (lowerVal == lowerSlider.min) {
+//         upperSlider.value = 4;
+//         }
+//     }
+//     document.querySelector('#two').value=this.value
+// };
+
+// lowerSlider.oninput = function () {
+//     lowerVal = parseInt(lowerSlider.value);
+//     upperVal = parseInt(upperSlider.value);
+//     if (lowerVal > upperVal - 4) {
+//         upperSlider.value = lowerVal + 4;
+//         if (upperVal == upperSlider.max) {
+//             lowerSlider.value = parseInt(upperSlider.max) - 4;
+//         }
+//     }
+//     document.querySelector('#one').value=this.value
+// };
+/**/
+
+$('.title__review').click(function(){
+    $('.rating__services').toggleClass('.show__rating').slideToggle(300);
+    $(this).toggleClass('active');
+})
+$('.title__categories').click(function(){
+    $('.choose__categories').toggleClass('.show__choose').slideToggle(300);
+    $(this).toggleClass('active');
+})
+$('.title__language').click(function(){
+    $('.choose__language').toggleClass('.show__choose').slideToggle(300);
+    $(this).toggleClass('active');
+})
+$('.title__durations').click(function(){
+    $('.choose__durations').toggleClass('.show__choose').slideToggle(300);
+    $(this).toggleClass('active');
+})
+
+
+$('.btn-filters').click(function(){
+    $('.modal__filter').toggleClass('active');
+})
+$('.close').click(function(){
+    $('.modal__filter').toggleClass('active');
+})
+
+
+
+$('.sub__questions .questions__title').click(function(){
+    $(this).parent('.sub__questions').toggleClass('show__dropdown')
+    $('.sub__questions').not($(this).parent('.sub__questions')).removeClass('show__dropdown')
+    $(this).parent('.sub__questions').toggleClass('change__icons');
+    $('.sub__questions').not($(this).parent('.sub__questions')).removeClass('change__icons');
+})
+
+$('.reply').hide();
+$('.write-review').click(function(){
+    $('.reply').slideToggle("slow");
+})
+
+
+$('#increase').click(function(){
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number').value = value;
+})
+$('#decrease').click(function(){
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 1 : value;
+    value < 2 ? value = 2 : '';
+    value--;
+    document.getElementById('number').value = value;
+})
+
+$('#increase2').click(function(){
+    var value = parseInt(document.getElementById('number2').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number2').value = value;
+})
+$('#decrease2').click(function(){
+    var value = parseInt(document.getElementById('number2').value, 10);
+    value = isNaN(value) ? 1 : value;
+    value < 2 ? value = 2 : '';
+    value--;
+    document.getElementById('number2').value = value;
+})
+
+$('#increase3').click(function(){
+    var value = parseInt(document.getElementById('number3').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number3').value = value;
+})
+$('#decrease3').click(function(){
+    var value = parseInt(document.getElementById('number3').value, 10);
+    value = isNaN(value) ? 1 : value;
+    value < 2 ? value = 2 : '';
+    value--;
+    document.getElementById('number3').value = value;
+})

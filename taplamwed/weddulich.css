@@ -1,0 +1,634 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;500;600;700&display=swap');
+</style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+header{
+    position: relative;
+}
+header .header-top{
+    display: flex;
+    padding:10px;
+    border-bottom: 0.01px solid black;
+}
+ul{
+    list-style: none!important;
+}
+a{
+    text-decoration: none!important;
+    
+}
+.sub-menu a{
+    color: #232323;
+}
+header .header-top .logo{
+    flex:1;
+}
+header .header-top .menu{
+    flex: 4;
+}
+header .header-top .other{
+    flex: 1;
+}
+header .menu .sub-menu{
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 2rem;
+}
+header .menu .sub-menu li{
+    padding-left:  40px;
+}
+header .tours{
+    margin-top: 1px;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-top:  0.1px solid black;
+    border-bottom:  0.1px solid black;
+    display: flex;
+}
+header .tours .coutry{
+    flex:1;
+}
+header .tours .area{
+    flex: 4;
+}
+header .tours .coutry{
+    padding-top: 7rem;
+    padding-left: 2rem;
+}
+header .tours .coutry h3{
+    padding-top:1rem;
+}
+header .tours .coutry .in-coutry{
+    color: red;
+}
+header .tours .area .vietnam{
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+header .tours .area .vietnam div{
+    margin-right: 4rem;
+}
+header .tours .area .vietnam div li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+header .tours .area .vietnam div li a{
+    font-size: 16px;
+    color: #2d4271;
+   
+}
+header .header-between{
+    display: none !important;
+    position: absolute;
+    width: 100%;
+}
+header .header-between.active{
+    display: block !important;
+    z-index: 1;
+    opacity: 1;
+}
+
+.slider{
+    background-image: url('images/8-1685076485-7120-1689235308.jpg') ;
+    background-size: 1519px 485px;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Màu chữ trên nền ảnh */
+position: relative;
+   
+  }
+  .form_submit{
+    width: 400px!important;
+}
+.group__form__date{
+    display: flex;
+}
+.title__search label{
+    color: black;
+    display: block;
+
+}
+.location_parent{
+    display: flex;
+    width: 30%;
+    align-items: center;
+    gap: 15px;
+    padding: 0 20px;
+}
+.text-in-backgorund {
+    text-align: center;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+
+}
+.text-in-backgorund .text {
+    margin-bottom: 30px;
+}
+.text-in-backgorund h1 {
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0!important;
+}
+.text-in-backgorund p {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    margin: 0!important;
+    margin-bottom: 30px;
+
+}
+.form_search {
+    width: 95%;
+    height: 82px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 70px;
+    box-shadow: 0 1px 2px #00000014, 0 4px 12px #0000000d;
+    display: flex;
+}
+input{
+    border: none;
+}
+select{
+    border: none;
+}
+select:focus {
+    outline: none;
+}
+.location {
+    display: grid;
+}
+.top__destinations h2 {
+    font-size: 36px;
+    color: #232323;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.list__destinations h5{
+    text-align: center;
+    font-size: 18px;
+
+}
+.list__destinations a{
+    font-size: 18px;
+    color: #232323;
+    font-weight: 700;
+    display: block;
+    margin-top: 16px;
+    margin-bottom: 5px;
+
+
+}
+.list__destinations img{
+    border-radius: 50%;
+    height:auto;
+    object-fit: cover;
+    width: 207px!important;
+    
+    
+}
+.img-fluid{
+    display: block; /* Để loại bỏ khoảng trắng dưới ảnh */
+    margin: 0 auto; /* Để căn giữa theo chiều ngang */
+}
+.item{
+    width: 250px;
+    margin:0;
+}
+footer{
+    background-color: #f9f9f9;
+}
+footer .support{
+    margin-left: 7rem;
+    margin-right: 7px;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    display: flex;
+}
+.section__banner{
+    height: 332px;
+}
+.banner{
+    position: absolute;
+}
+.banner img{
+    width: 420px;
+    border-radius: 10px;
+}
+.UuDai h2{
+text-align: center;
+
+}
+.UuDai a{
+    text-decoration: none;
+}
+.UuDai p{
+    text-align: center;
+   
+}
+.UuDai hr{
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color:red;
+   
+}
+.section__tour{
+    margin-top: 30px; 
+}
+.product h2{
+    text-align: center;
+}
+.product a{
+    text-decoration: none;
+}
+.product p{
+    text-align: center;
+   
+}
+.product hr{
+    align-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    color:red;
+   
+}
+.section__tour{
+    margin-bottom: 60px;
+}
+.list__recommended{
+padding: 0 10px;
+margin-bottom: 30px;
+}
+.card__recommended{
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 1px 2px #00000014,0 4px 12px #0000000d;
+}
+.tour__imgage{
+position: relative;
+}
+.main__tour__image{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.main__tour__image img{
+    display: block;
+    width: 100%;
+}
+/*
+.featured{
+    position: absolute;
+    left: 0;
+    top: 20px;
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.featured p{
+    padding: 4px 8px;
+    background-color: #3b71fe;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 5px;
+}
+*/
+.customer__img{
+    position: absolute;
+    right: 35px;
+    bottom: -18px;
+    z-index: 2;
+}
+.tour__des{
+    padding: 20px;
+}
+.tour__location{
+    font-size: 14px;
+    color: #727272;
+    display: block;
+}
+.tour__des__content a{
+    font-size: 18px;
+    color: #232323;
+    font-weight: 700;
+    display: block;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+.star__rating{
+    display: flex;
+    margin-bottom: 20px;
+}
+.star__rating i{
+    color: #ffb21f;
+}
+.star__rating span{
+    font-size: 16px;
+    color: #232323;
+    font-weight: 700;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+.star__rating p{
+    font-size: 14px;
+    color: #727272;
+}
+.tour__price{
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dedede;
+    display: flex;
+    justify-content: space-between;
+}
+.price p, .hours{
+    font-size: 14px;
+    color:#727272
+}
+.price strong{
+    color: #232323;
+}
+
+.item{
+    padding: 0 20px;
+
+ }   
+.banner__hot img{
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    
+}
+
+.section__tour__hot{
+    margin-bottom: 30px;
+    height: 100%;
+}
+.Hot__item {
+    position: relative; 
+    display: inline-block; 
+}
+
+.text_overlay {
+    position: absolute; 
+    top: 80%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    
+    padding: 10px; 
+}
+footer .support .contact{
+    flex:2;
+}
+footer .support .app-phone{
+    flex:1;
+}
+footer .support .contact{
+    display: flex;
+}
+footer .support .contact .one{
+    flex: 1;
+}
+footer .support .contact .two{
+    flex: 1;
+}
+footer .support .contact .three{
+    flex: 1;
+}
+footer .support .contact .conscious{
+    display: flex;
+}
+footer .support .contact .conscious ul{
+    flex: 1;
+}
+footer .support .contact .conscious li{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .support .contact .conscious a{
+    color: #2d4271;
+}
+footer .support .contact h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .app-phone .app{
+    display: flex;
+    margin-top: 1rem;
+}
+footer .app-phone .app div{
+    flex:1;
+}
+footer .app-phone .app div img{
+    border-radius: 5px;
+}
+footer .app-phone .qr{
+    display: flex;
+    margin-top: 1rem;
+}
+footer .app-phone .qr div{
+    flex:1;
+}
+footer .support .app-phone h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information{
+    display: flex;
+    margin-left: 7rem;
+    margin-right: 7px;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
+footer .information .info{
+    flex:1;
+}
+footer .information .email{
+    flex:1;
+}
+footer .information .info{
+    display: flex;
+}
+footer .information .info .call{
+    flex: 1;
+}
+footer .information .info .intro{
+    flex: 1;
+}
+footer .information .info .call p{
+    width: 20rem;
+}
+footer .information .info h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .info a{
+    color: #2d4271;
+}
+footer .information .info li{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+}
+footer .information .info p{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .info .icon i{
+   font-size: 25px;
+   padding-right: 1rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+footer .information .info .hotline{
+    background-color: red;
+    margin-right: 12rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 5px;
+}
+footer .information .info .hotline i{
+    margin-left: 2rem;
+}
+footer .information .info .hotline h4{
+    font-size: 20px;
+    color:white;
+}
+footer .information .email h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .email .customersemail input{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+footer .information .email .customersemail .need{
+    position: relative;
+    border: 1px;
+}
+footer .information .email .customersemail i{
+    position: absolute;
+    top:1vh;
+    left:33%;
+}
+footer .information .email .confirm{
+    display: flex;
+}
+footer .information .email .confirm .confirm-one{
+    padding-right: 5rem;
+}
+footer .information .email .confirm .confirm-two div{
+    margin-left: 2rem;
+}
+.last{
+    padding: 1rem;
+}
+.last p{
+    font-size: 12px;
+    padding: 0.25rem;
+    color: #2d4271;
+    padding-left: 2rem;
+}
+
+
+.category-icon :hover{
+    transform: scale(1.1);
+
+}
+
+@media only screen and (max-width:46.185em) {
+    footer .support{
+        margin-left: 7rem;
+        margin-right: 7px;
+        margin-top: 3rem;
+        padding-top: 3rem;
+        display: block;
+    }
+    footer .support .contact{
+        display: block;
+    }
+    footer .app-phone .app{
+        display: block;
+        margin-top: 1rem;
+    }
+    footer .information{
+        display: block;
+        margin-left: 7rem;
+        margin-right: 7px;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+    }
+    footer .information .email .confirm{
+        display: block;
+    }
+    footer .information .info{
+        display: block;
+    }
+    header .tours .area .vietnam{
+        display: block;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+@media only screen and (max-width:65em){
+    footer .support{
+        margin-left: 7rem;
+        margin-right: 7px;
+        margin-top: 3rem;
+        padding-top: 3rem;
+        display: block;
+    }
+    footer .support .contact{
+        display: block;
+    }
+    footer .app-phone .app{
+        display: block;
+        margin-top: 1rem;
+    }
+    footer .information{
+        display: block;
+        margin-left: 7rem;
+        margin-right: 7px;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+    }
+    header .tours .area .vietnam{
+        display: block;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+}
+
+

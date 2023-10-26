@@ -1,0 +1,21 @@
+.img2 + p, .content5 + p {
+    text-align: inherit;
+    font-weight: normal;
+    font-size: 13px;
+}
+.img2 + p + ul {
+    margin-left: 40px;
+}
+.img2 + p + ul li {
+    padding-bottom: 7px;
+}
+.content5 {
+    font-weight: bold;
+    font-size: 15px;
+}
+.content5 + p + ul {
+    margin-left: 40px;
+}
+.content5 + p + ul li {
+    padding-bottom: 10px;
+}

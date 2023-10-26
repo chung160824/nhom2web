@@ -1,0 +1,8 @@
+.content1 + ul {
+    margin-left: 50px;
+}
+.content1 + ul li {
+    padding-bottom: 20px;
+    color: black;
+    font-size: 13px;
+}

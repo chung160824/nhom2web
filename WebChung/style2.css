@@ -1,0 +1,1110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+}
+header .header-top{
+    display: flex;
+    padding:10px;
+    border-bottom: 0.01px solid black;
+}
+h2{
+    color: #2d4271;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+header .header-top .logo{
+    flex:1;
+}
+header .header-top .menu{
+    flex: 4;
+}
+header .header-top .other{
+    flex: 1;
+}
+header .menu .sub-menu{
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 2rem;
+}
+header .menu .sub-menu li{
+    padding-left:  40px;
+}
+header .menu .sub-menu li a{
+    color: black;
+}
+header .tours{
+    margin-top: 1px;
+    margin-bottom: 1rem;
+    background-color: white;
+    border-top:  0.1px solid black;
+    border-bottom:  0.1px solid black;
+    display: flex;
+}
+header .tours .coutry{
+    flex:1;
+}
+header .tours .area{
+    flex: 4;
+}
+header .tours .coutry{
+    padding-top: 7rem;
+    padding-left: 2rem;
+}
+header .tours .coutry h3{
+    padding-top:1rem;
+}
+header .tours .coutry .in-coutry{
+    color: red;
+}
+header .tours .area .vietnam{
+    display: flex;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+header .tours .area .vietnam div{
+    margin-right: 4rem;
+}
+header .tours .area .vietnam div li{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+header .tours .area .vietnam div li a{
+    font-size: 16px;
+    color: #2d4271;
+}
+header .header-between{
+    display: none !important;
+    position: absolute;
+    width: 100%;
+}
+header .header-between.active{
+    display: block !important;
+    z-index: 1;
+    opacity: 1;
+}
+
+
+
+main .path{
+    padding-bottom: 2rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-left: 3rem;
+}
+main .path ul{
+    display: flex;
+}
+main .path ul li{
+    display: flex;
+}
+main .path a{
+    font-size: 13px;
+}
+main .path p{
+    font-size: 10px;
+    padding-right: 8px;
+    padding-left: 2px;
+}
+main .content-one{
+    background-color: #f9f9f9;
+}
+main .content-one .introduce{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 2rem;
+    display: flex;
+}
+main .content-one .introduce .name{
+    flex: 1;
+}
+main .content-one .introduce .price{
+    flex: 1;
+}
+main .content-one .introduce .name p{
+    font-size: 15px;
+    padding-bottom: 1rem;
+    color: blue;
+}
+main .content-one .introduce .name h2{
+    color: #2d4271;
+}
+main .content-one .introduce .name .other{
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+}
+main .content-one .introduce .name .other p{
+    color: #2d4271;
+    padding: 0;
+}
+main .content-one .introduce .name .other .icon-comment{
+    margin-right: 0.5rem;
+}
+main .content-one .introduce .name .other .icon-comment i{
+  font-size: 40px;
+}
+main .content-one .introduce .name .other .icon-heart{
+    display: flex;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: 0.01px solid #2d4271;
+    border-radius: 5px;
+}
+main .content-one .introduce .name .other .flow{
+    height: auto;
+    width: 6rem;
+    margin-right: 0.75rem;
+}
+main .content-one .introduce .name .other .number{
+  position: absolute;
+  top:0.5rem;
+  left: 1rem;
+  color: white;    
+}
+main .content-one .introduce .price{
+    display: flex;
+    margin-bottom: 1rem;
+}
+main .content-one .introduce .price .price-one{
+    flex: 1;
+    display: flex;
+    margin-right: 1rem;
+    padding-left: 30%;
+}
+main .content-one .introduce .price .price-one h2{
+    color: red;
+}
+main .content-one .introduce .price .price-two{
+    display: block;
+    flex: 1;
+}
+main .content-one .introduce .price .price-two button{
+    padding: 1rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-bottom: 1rem;
+    border: 0.1px solid black;
+    border-radius: 5px;
+    background-color: white;
+}
+main .content-one .introduce .price .price-two button{
+    width: 100%;
+    height: 100%;
+}
+main .content-one .introduce .price .price-two :first-child button{
+    background-color: red;
+    color: white;
+    border: none;
+}
+main .content-one .introduce .price .price-two button:hover{
+    background-color: blue;
+    color: white;
+    border:none;
+}
+main .content-one .introduce .price .price-two :first-child button:hover{
+    background-color: rgb(94, 17, 17);
+    border:none;
+}
+main .content-one .picture{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 2rem;
+    display: flex;
+}
+main .content-one .picture .block-one{
+    flex: 3;
+    margin-right: 1rem;
+}
+main .content-one .picture .block-two{
+    flex: 2;
+    height: 100%;
+}
+main .content-one .picture .block-two .picture-one{
+    display: flex;
+    margin-bottom: 1rem;
+}
+main .content-one .picture .block-two .picture-one :first-child{
+    margin-right: 0.5rem;
+}
+main .content-one .picture .block-two .picture-one .need{
+    margin-left: 0.5rem;
+}
+main .content-one .picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+main .content-one .others{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 2rem;
+    display: flex;
+}
+main .content-one .others h1 , p{
+    color: #2d4271!important;
+}
+main .content-one .others .info-tour{
+    flex: 2;
+    margin-top: 2rem;
+}
+main .content-one .others .huge-body{
+    flex: 3;
+    margin-bottom: 5rem;
+    border-bottom: 0.1px solid #2d4271;
+}
+main .content-one .others .info-tour .information{
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    margin-right: 2rem;
+}
+main .content-one .others .info-tour .information .info{
+    flex:3;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+main .content-one .others .info-tour .information .other-date{
+    flex:2;
+    padding-left: 3rem;
+    padding-top: 1rem;
+}
+main .content-one .others .info-tour .information .other-date input{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 0.01px solid blue;
+    border-radius: 5px;
+}
+main .content-one .others .info-tour .information .info div{
+    display: flex;
+    margin-bottom: 1rem;
+}
+main .content-one .others .info-tour .information .info div p{
+    margin-right: 0.5rem;
+}
+main .content-one .others .info-tour .message-call{
+    margin-top: 1rem;
+}
+main .content-one .others .info-tour .message-call .all{
+    display: flex;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: 0.1px solid #2d4271;
+    margin-right: 12rem;
+}
+main .content-one .others .info-tour .message-call .all div a{
+    display: flex;
+    padding: 0.5rem;
+}
+main .content-one .others .info-tour .message-call .all .one{
+    background-color: blue;
+    border-radius: 10px;
+}
+main .content-one .others .info-tour .message-call .all .one i ,.one h4{
+    color: white;
+}
+main .content-one .others .info-tour .message-call i{
+    margin-right: 0.3rem;
+}
+main .content-one .others .huge-body i{
+    color: blue;
+}
+main .content-one .others .huge-body .body-one , .body-two{
+    display: flex;
+    padding-bottom: 2rem;
+}
+main .content-one .others .huge-body .body-one div , .body-two div{
+    flex: 1;
+}
+main .content-one .others .huge-body .body-one div p , .body-two div p{
+    margin-top: 1rem;
+    margin-right: 1.5rem;
+}
+main .content-two .highlight{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 2rem;
+}
+main .content-two .highlight div{
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+    padding-bottom: 3rem;
+}
+main .content-two .highlight div p{
+    color: #2d4271;
+    margin-top: 1rem;
+    margin-bottom: 1dvi;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+}
+main .content-two .go-area{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 2rem;
+}
+main .content-two .go-area img{
+    width: 100%;
+    height: 10rem;
+    border-radius: 10px;
+}
+main .content-two .go-area h2{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+main .content-two .progress .name{
+    text-align: center;
+}
+main .content-two .progress .date-information{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid #2d4271;
+}
+main .content-two .progress .date-information .date-info{
+    flex: 1;
+    background-color: #f5f5f5;
+}
+main .content-two .progress .date-information .date-detail{
+    flex: 2;
+}
+main .content-two .progress .date-information .date-info{
+    display: flex;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+main .content-two .progress .date-information .date-info .date{
+    flex:1;
+}
+main .content-two .progress .date-information .date-info .map{
+    flex:4;
+}
+main .content-two .progress .date-information .date-info .date{
+    margin-right: 1rem;
+    margin-top: 2rem
+}
+main .content-two .progress .date-information .date-info .date .day{
+    border-right: 1px dotted blue;
+    padding-bottom: 4rem;
+    margin-top: 0.1rem;
+    display: flex;
+}
+main .content-two .progress .date-information .date-info .date .day div{
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    margin-left: 0.3rem;
+    margin-right: 0.3rem;
+    background-color: red;
+}
+main .content-two .progress .date-information .date-info .date .day div p{
+    margin-left: 0.35rem;
+    margin-top: 0.1rem;
+    color: white;
+}
+main .content-two .progress .date-information .date-info .date div h3{
+    margin-left: 0.5rem;
+}
+main .content-two .progress .date-information .date-info .map{
+    margin-right: 1rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+}
+main .content-two .progress .date-information .date-info .map div{
+    margin-bottom: 1.5rem;
+}
+main .content-two .progress .date-information .date-detail{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+main .content-two .progress .date-information .date-detail h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #2d4271;
+}
+main .content-two .progress .date-information .date-detail .day-one , .day-two , .day-three , .day-four{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+main .content-two .progress .date-information .date-detail h4{
+    text-align: center;
+    color: #2d4271;
+}
+main .content-two .progress .date-information .date-detail .note{
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+main .content-two .progress .date-information .date-detail .day-one div , .day-two div , .day-three div, .day-four div{
+    border-left:  1px dotted blue;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+main .content-two .progress .date-information .date-detail .day-one div p, .day-two div p, .day-three div p, .day-four div p{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+main .content-two .detail-move{
+    display: flex;
+    margin-top: 3rem;
+}
+main .content-two .detail-move .detail-one{
+    flex: 1;
+}
+main .content-two .detail-move .detail-two{
+    flex: 1;
+}
+main .content-two .detail-move .all{
+    background-color: #f9f9f9;
+    margin: 1rem;
+}
+main .content-two .detail-move .all .move{
+    display: flex;
+    margin: 1rem;
+}
+main .content-two .detail-move .all .move .go{
+    flex: 1;
+    border-right: 1px dotted black;
+}
+main .content-two .detail-move .all .move .back{
+    flex: 1;
+}
+main .content-two .detail-move .all .move .go .story , .time{
+    display: flex;
+}
+main .content-two .detail-move .all .move .go .story p, .time p{
+    flex: 1;
+}
+main .content-two .detail-move .all .move .back .story , .time{
+    display: flex;
+}
+main .content-two .detail-move .all .move .back .story p, .time p{
+    flex: 1;
+}
+
+
+main .content-three h2{
+   text-align: center;
+   margin-top: 1rem;
+   color: #2d4271;
+}
+main .content-three .suggest-like{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 2rem;
+}
+main .content-three .suggest-like .column{
+    display: flex;
+}
+main .content-three .suggest-like .column .row-one , .row-two , .row-three, .row-four{
+    flex: 1;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    margin-top: 1rem;
+    position: relative
+}
+main .content-three .suggest-like .column .row-one:hover, .row-two:hover, .row-three:hover, .row-four:hover{
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin-top: 1.2rem;
+}
+main .content-three .suggest-like .column .row-one img, .row-two img, .row-three img, .row-four img{
+    width: 100%;
+    height: 15rem;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+main .content-three .suggest-like .column .row-one .icon-heart, .row-two .icon-heart, .row-three .icon-heart, .row-four .icon-heart{
+    position: absolute;
+    font-size: 30px;
+    padding: 0.2rem;
+    background-color: rgba(255, 255, 255, 0.07);
+    top: 1vh;
+    left: 1vw;
+}
+main .content-three .suggest-like .column .row-one .icon-comment, .row-two .icon-comment, .row-three .icon-comment, .row-four .icon-comment{
+    position: absolute;
+    font-size: 35px;
+    top: 1.5vh;
+    right: 1.2rem;
+}
+main .content-three .suggest-like .column .row-one .star-number, .row-two .star-number, .row-three .star-number, .row-four .star-number{
+    position: absolute;
+    font-size: 18px;
+    color: white;
+    top: 1.8vh;
+    right: 2rem;
+}
+main .content-three .suggest-like .column .row-one .flow-number, .row-two .flow-number, .row-three .flow-number, .row-four .flow-number{
+    position: absolute;
+    font-size: 15px;
+    top: 7vh;
+    right: 1rem;
+    padding: 0.2rem 0.2rem 1rem 1rem;
+    background-color: rgba(255, 255, 255, 0.07);
+}
+main .content-three .suggest-like .column .row-one .flow-number p, .row-two .flow-number p, .row-three .flow-number p, .row-four .flow-number p{
+  color: white;
+}
+main .content-three .suggest-like .letter h5{
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+main .content-three .suggest-like .letter p{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+}
+main .content-three .suggest-like .letter h4{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 1rem;
+    padding-bottom: 0.5rem;
+    color: red;
+}
+main .content-three .suggest-like .column .row-one .letter div h5{
+    width: 100%;
+    height: 4.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+main .content-three .suggest-like .column .row-two .letter div h5{
+    width: 100%;
+    height: 4.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+main .content-three .suggest-like .column .row-three .letter div h5{
+    width: 100%;
+    height: 4.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+main .content-three .suggest-like .column .row-four .letter div h5{
+    width: 100%;
+    height: 4.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+main .content-three .suggest-like .other .product button{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: blue;
+    background-color: white;
+    border: 0.5px solid blue;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-bottom: 1rem;
+}
+main .content-three .suggest-like .other .product button:first-child{
+    background-color: red;
+    color: white;
+    border:none;
+}
+main .content-three .suggest-like .other .product .watch:hover{
+    background-color: blue;
+    color: white;
+    border:none;
+}
+main .content-three .suggest-like .other .product button:first-child:hover{
+    background-color: rgb(94, 17, 17);
+    border:none;
+}
+
+
+main .content-three .note-information{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    padding-top: 2rem;
+    display: flex;
+}
+main .content-three .note-information h2{
+    color: #2d4271;
+}
+main .content-three .note-information .column-one{
+    flex:1;
+}
+main .content-three .note-information .column-two{
+    flex:1;
+}
+main .content-three .note-information .column-one .one-row-one , .one-row-two , 
+.one-row-three , .one-row-four, .one-row-five
+{
+    background-color: #f9f9f9;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+main .content-three .note-information .column-two .two-row-one , .two-row-two ,
+.two-row-three , .two-row-four , .two-row-five
+{
+    background-color: #f9f9f9;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+}
+main .content-three .note-information .column-one .one-row-one .read, .one-row-two .read, 
+.one-row-three .read, .one-row-four .read, .one-row-five .read
+{
+    display: none;
+    z-index: 0;
+    opacity: 0;
+}
+main .content-three .note-information .column-one .one-row-one .read.active, .one-row-two .read.active, 
+.one-row-three .read.active, .one-row-four .read.active, .one-row-five .read.active
+{
+    display: block;
+    z-index: 1;
+    opacity: 1;
+}
+main .content-three .note-information .column-two .two-row-one .read, .two-row-two .read,
+.two-row-three .read, .two-row-four .read, .two-row-five .read
+{
+    display: none;
+    z-index: 0;
+    opacity: 0;
+}
+main .content-three .note-information .column-two .two-row-one .read.active, .two-row-two .read.active,
+.two-row-three .read.active, .two-row-four .read.active, .two-row-five .read.active
+{
+    display: block;
+    z-index: 1;
+    opacity: 1;
+}
+main .content-three .note-information .column-one .one-row-one .one-row-one-click , .one-row-two .one-row-two-click , 
+.one-row-three .one-row-three-click , .one-row-four .one-row-four-click , .one-row-five .one-row-five-click
+{
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+}
+main .content-three .note-information .column-two .two-row-one .two-row-one-click , .two-row-two .two-row-two-click ,
+.two-row-three .two-row-three-click , .two-row-four .two-row-four-click , .two-row-five .two-row-five-click
+{
+    display: flex;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+main .content-three .note-information .column-one .one-row-one .one-row-one-click i, .one-row-two .one-row-two-click i, 
+.one-row-three .one-row-three-click i, .one-row-four .one-row-four-click i, .one-row-five .one-row-five-click i
+{
+    position: absolute;
+    right:1vw;
+    top:1vh;
+}
+main .content-three .note-information .column-two .two-row-one .two-row-one-click i , .two-row-two .two-row-two-click i,
+.two-row-three .two-row-three-click i, .two-row-four .two-row-four-click i, .two-row-five .two-row-five-click i
+{
+    position: absolute;
+    right:1vw;
+    top:1vh;
+}
+main .content-four .decor-one .presently{
+    background-color: red;
+    width: 3.5rem;
+    height: 2.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: fixed;
+    right: 0vw;
+    top:50vh;
+}
+main .content-four .decor-one .presently i{
+    color: white;
+    margin-top: 0.75rem;
+    margin-left: 1.25rem;
+}
+main .content-four .decor-one .hidden{
+    background-color: red;
+    width: 3.5rem;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    display: none;
+    position: fixed;
+    right: 0vw;
+    top:40vh;
+}
+
+main .content-four .decor-one .hidden i{
+    color: white;
+    margin-bottom: 0.5rem;
+    margin-top: 0.75rem;
+    margin-left: 1.25rem;
+}
+footer{
+    background-color: #f9f9f9;
+}
+footer .support{
+    margin-left: 7rem;
+    margin-right: 7px;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    display: flex;
+}
+footer .support .contact{
+    flex:2;
+}
+footer .support .app-phone{
+    flex:1;
+}
+footer .support .contact{
+    display: flex;
+}
+footer .support .contact .one{
+    flex: 1;
+}
+footer .support .contact .two{
+    flex: 1;
+}
+footer .support .contact .three{
+    flex: 1;
+}
+footer .support .contact .conscious{
+    display: flex;
+}
+footer .support .contact .conscious ul{
+    flex: 1;
+}
+footer .support .contact .conscious li{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .support .contact .conscious a{
+    color: #2d4271;
+}
+footer .support .contact h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .app-phone .app{
+    display: flex;
+    margin-top: 1rem;
+}
+footer .app-phone .app div{
+    flex:1;
+}
+footer .app-phone .app div img{
+    border-radius: 5px;
+}
+footer .app-phone .qr{
+    display: flex;
+    margin-top: 1rem;
+}
+footer .app-phone .qr div{
+    flex:1;
+}
+footer .support .app-phone h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information{
+    display: flex;
+    margin-left: 7rem;
+    margin-right: 7px;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
+footer .information .info{
+    flex:1;
+}
+footer .information .email{
+    flex:1;
+}
+footer .information .info{
+    display: flex;
+}
+footer .information .info .call{
+    flex: 1;
+}
+footer .information .info .intro{
+    flex: 1;
+}
+footer .information .info .call p{
+    width: 20rem;
+}
+footer .information .info h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .info a{
+    color: #2d4271;
+}
+footer .information .info li{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+}
+footer .information .info p{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .info .icon i{
+   font-size: 25px;
+   padding-right: 1rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+footer .information .info .hotline{
+    background-color: red;
+    margin-right: 12rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 5px;
+}
+footer .information .info .hotline i{
+    margin-left: 2rem;
+}
+footer .information .info .hotline h4{
+    font-size: 20px;
+    color:white;
+}
+footer .information .email h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .email .customersemail input{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+footer .information .email .customersemail .need{
+    position: relative;
+    border: 1px;
+}
+footer .information .email .customersemail i{
+    position: absolute;
+    top:1vh;
+    left:33%;
+}
+footer .information .email .confirm{
+    display: flex;
+}
+footer .information .email .confirm .confirm-one{
+    padding-right: 5rem;
+}
+footer .information .email .confirm .confirm-two div{
+    margin-left: 2rem;
+}
+.last{
+    padding: 1rem;
+}
+.last p{
+    font-size: 12px;
+    padding: 0.25rem;
+    color: #2d4271;
+    padding-left: 2rem;
+}
+@media only screen and (max-width:46.185em) {
+   
+    footer .support{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 3rem;
+        padding-top: 3rem;
+        display: block;
+    }
+    footer .support .contact{
+        display: block;
+    }
+    footer .app-phone .app{
+        display: block;
+        margin-top: 1rem;
+    }
+    footer .information{
+        display: block;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+    }
+    footer .information .info{
+        display: block;
+    }
+    footer .information .email .confirm{
+        display: block;
+    }
+    header .tours .area .vietnam{
+        display: block;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    main .content-one .introduce{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+        display: block;
+    }
+    main .content-one .introduce .price .price-one{
+        flex: 1;
+        display: flex;
+        margin-right: 1rem;
+        padding: 1rem;
+    }
+    main .content-one .picture{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+        display: block;
+    }
+    main .content-one .others{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+        display: block;
+    }
+    main .content-one .others .info-tour{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    main .content-two .progress .date-information{
+        display: block;
+        border-radius: 10px;
+        border: 1px solid #2d4271;
+    }
+    main .content-three .suggest-like{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    main .content-three .suggest-like .column{
+        display: block;
+    }
+    main .content-two .highlight {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+    }
+    main .content-two .go-area {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+    }
+    main .content-three .note-information {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding-top: 2rem;
+        display: flex;
+    }
+    main .content-three .suggest-like .column .row-one img, .row-two img, .row-three img, .row-four img{
+        width: 100%;
+        height: 15rem;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+}
+@media only screen and (max-width:65em){
+
+    footer .support{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 3rem;
+        padding-top: 3rem;
+        display: block;
+    }
+    footer .support .contact{
+        display: block;
+    }
+    footer .app-phone .app{
+        display: block;
+        margin-top: 1rem;
+    }
+    footer .information{
+        display: block;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+    }
+    header .tours .area .vietnam{
+        display: block;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    main .content-one .introduce{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
+        display: block;
+    }
+    main .content-one .introduce .price .price-one{
+        flex: 1;
+        display: flex;
+        margin-right: 1rem;
+        padding: 1rem;
+    }
+    main .content-one .picture{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
+        display: block;
+    }
+    main .content-one .others{
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
+        display: block;
+    }
+    main .content-one .others .info-tour{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
+    main .content-two .progress .date-information{
+        display: block;
+        border-radius: 10px;
+        border: 1px solid #2d4271;
+    }
+    main .content-three .suggest-like{
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    main .content-three .suggest-like .column{
+        display: block;
+    }
+    main .content-two .highlight {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
+    }
+    main .content-two .go-area {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
+    }
+    main .content-three .note-information {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        padding-top: 2rem;
+        display: flex;
+    }
+    main .content-three .suggest-like .column .row-one img, .row-two img, .row-three img, .row-four img{
+        width: 100%;
+        height: 25rem;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+
+}

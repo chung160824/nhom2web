@@ -1,0 +1,196 @@
+.container h1 {
+margin-left: 90px;
+}
+.container h2{
+    margin-left: 90px;
+}
+.container h3{
+    margin-left: 90px;
+}
+
+.container p{
+    padding-left: 90px;
+    padding-right: 20%;
+    display: flex;
+    text-align: justify;
+
+}
+.container img {
+    margin-left: 80px;
+    width: 80%;
+}
+a{
+    text-decoration: none!important;
+}
+
+footer{
+    background-color: #f9f9f9;
+}
+footer .support{
+    margin-left: 7rem;
+    margin-right: 7px;
+    margin-top: 3rem;
+    padding-top: 3rem;
+    display: flex;
+}
+footer .support .contact{
+    flex:2;
+}
+footer .support .app-phone{
+    flex:1;
+}
+footer .support .contact{
+    display: flex;
+}
+footer .support .contact .one{
+    flex: 1;
+}
+footer .support .contact .two{
+    flex: 1;
+}
+footer .support .contact .three{
+    flex: 1;
+}
+footer .support .contact .conscious{
+    display: flex;
+}
+footer .support .contact .conscious ul{
+    flex: 1;
+}
+footer .support .contact .conscious li{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .support .contact .conscious a{
+    color: #2d4271;
+}
+footer .support .contact h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .app-phone .app{
+    display: flex;
+    margin-top: 1rem;
+}
+footer .app-phone .app div{
+    flex:1;
+}
+footer .app-phone .app div img{
+    border-radius: 5px;
+}
+footer .app-phone .qr{
+    display: flex;
+    margin-top: 1rem;
+}
+footer .app-phone .qr div{
+    flex:1;
+}
+footer .support .app-phone h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information{
+    display: flex;
+    margin-left: 7rem;
+    margin-right: 7px;
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+}
+footer .information .info{
+    flex:1;
+}
+footer .information .email{
+    flex:1;
+}
+footer .information .info{
+    display: flex;
+}
+footer .information .info .call{
+    flex: 1;
+}
+footer .information .info .intro{
+    flex: 1;
+}
+footer .information .info .call p{
+    width: 20rem;
+}
+footer .information .info h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .info a{
+    color: #2d4271;
+}
+footer .information .info li{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+}
+footer .information .info p{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .info .icon i{
+   font-size: 25px;
+   padding-right: 1rem;
+   padding-top: 0.5rem;
+   padding-bottom: 0.5rem;
+}
+footer .information .info .hotline{
+    background-color: red;
+    margin-right: 12rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-radius: 5px;
+}
+footer .information .info .hotline i{
+    margin-left: 2rem;
+}
+footer .information .info .hotline h4{
+    font-size: 20px;
+    color:white;
+}
+footer .information .email h3{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    color: #2d4271;
+}
+footer .information .email .customersemail input{
+    padding-top:0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 5rem;
+    border-radius: 5px;
+    border: 0.1px solid black;
+}
+footer .information .email .customersemail .need{
+    position: relative;
+    border: 1px;
+}
+footer .information .email .customersemail i{
+    position: absolute;
+    top:1vh;
+    left:33%;
+}
+footer .information .email .confirm{
+    display: flex;
+}
+footer .information .email .confirm .confirm-one{
+    padding-right: 5rem;
+}
+footer .information .email .confirm .confirm-two div{
+    margin-left: 2rem;
+}
+.last{
+    padding: 1rem;
+}
+.last p{
+    font-size: 12px;
+    padding: 0.25rem;
+    color: #2d4271;
+    padding-left: 2rem;
+}

@@ -1,0 +1,45 @@
+.content1 + p {
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
+}
+.content1 + p + ul {
+    margin-left: 40px;
+}
+.content1 + p + ul li {
+    font-size: 13px;
+}
+.contentmain .content1 + p {
+    text-align: inherit;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.imgmain .contentmain .image {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    text-align: center;
+    position: relative;
+}
+.imgmain .contentmain .image .link {
+    width: calc(33.3% - 30px);
+    overflow: auto;
+    z-index: 1;
+    border: 1px solid #e6e6e6;
+    border-radius: 4px;
+    box-shadow: 0px 0px 5px #e6e6e6;
+}
+.image .link .picture img {
+    width: 100%;
+    height: 190px;
+}
+.image .link button {
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 4px;
+}
